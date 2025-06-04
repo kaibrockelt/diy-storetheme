@@ -78,12 +78,11 @@
   },
   "logo#desktop": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
-    }
+    "title": "Logo",
+    "href": "/",
+    "url": "assets/cicd/logo-color.png",
+    "width": "180px"
+  } 
   },
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
@@ -125,9 +124,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "assets/cicd/logo-color.svg",
+      "width": "150px"
+      //"height": "27.5"
     }
   }
 }

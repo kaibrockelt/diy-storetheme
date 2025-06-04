@@ -7,9 +7,9 @@
 }
 
 .infoCardContainer--info-card-home {
-  max-width: 1520px;
+  width: 100%;
   margin: 0 auto;
-  background-color: #e6f1e6;
+  background-color: #FAB604;
   padding: 0px;
 }
 
@@ -73,15 +73,26 @@
      font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
+    width: 40%;
   }
   .infoCardContainer--info-card-home .infoCardImageContainer {
-    width: 70%;
+    width: 60%;
+    display: flex;
+    align-items:center;
+    align-content: center;
+    background-image: url("assets/cicd/Stripes-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
   }
+}
+.infoCardImage--info-card-home{
+  max-height: 500px;
+  
+  margin: 20px auto;
 }
 
 .productImagesContainer--quickview .carouselContainer {
