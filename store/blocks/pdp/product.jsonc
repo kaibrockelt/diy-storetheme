@@ -1,14 +1,16 @@
 {
-  "store.product": {
+  "store.product.product-comparison": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      "condition-layout.product#availability",
+      "condition-layout.product#availability",      
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
-      "shelf.relatedProducts",
+      "shelf.relatedProducts", 
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+
+      "product-comparison-drawer"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -20,7 +22,7 @@
     }
   },
   "flex-layout.row#product-breadcrumb": {
-    "props": {
+    "props": { 
       "marginTop": 4
     },
     "children": ["breadcrumb"]
@@ -100,6 +102,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-comparison-block.selector#pdp",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
