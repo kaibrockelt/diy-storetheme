@@ -200,5 +200,15 @@
         "text": "Contact Us"
       }
     }
+  },
+  "category-menu": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "mobileMode": true,
+      "sortSubcategories": "name"
+    }
   }
 }
