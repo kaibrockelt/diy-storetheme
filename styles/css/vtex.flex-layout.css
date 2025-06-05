@@ -43,7 +43,13 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background: repeating-linear-gradient(
+  -55deg,
+  #000,
+  #000 15px,
+  #555 15px,
+  #555 30px
+);
   padding: 14px 0px;
 }
 
@@ -55,6 +61,7 @@
   align-items: center;
   margin-bottom: 5px;
   padding-top: 5px;
+  
 }
 
 .flexCol--filterCol {
@@ -95,4 +102,9 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+
+.flexRowContent--menu-link{
+  background: #000;
 }

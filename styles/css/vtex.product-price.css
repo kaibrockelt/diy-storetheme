@@ -5,8 +5,16 @@
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #000;
   font-size: 1.25rem;
+}
+.currencyFraction{
+  font-size: 1rem;
+  position: relative;
+  top: -15px;
+}
+.currencyFraction--summary{
+  top: -4px;
 }
 
 .sellingPriceValue {

@@ -16,7 +16,14 @@
     ]
   },
   "slider-layout#welcome":{
-    "children": ["info-card#home"]
+    "children": ["info-card#home", "info-card#gardening"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
   },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -50,26 +57,51 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Power Tools\nThere is no job that can't be done",
+      "textAlignment": "LEFT",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["flex-layout.col#prods", "flex-layout.col#toolsimage"],
+    "props":{
+      "fullWidth": "false"
+    }
+  },
+  "flex-layout.col#prods":{
+    "children": ["list-context.product-list#demo1"],
+    "props":{
+      "width": "66%"
+    }
+  },
+  "flex-layout.col#toolsimage":{
+    "children": ["image#powertool"],
+    "props":{
+      "width": "34%"
+    }
+  },
+  "image#powertool": {
+    "props": {
+      "src": "assets/design/powertools.jpg",
+      "height": "100%",
+      "width": "auto"
+      
+    }
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#homeshelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "11/15"
     }
   },
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 3,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
@@ -77,13 +109,26 @@
     }
   },
 
+  "info-card#gardening": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/design/gardening.jpg",
+      "headline": "OPEN SEASON has started",
+      "callToActionText": "Find the right tools",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-gardening",
+      "textAlignment": "center"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "assets/flyer.png",
-      "headline": "Weekly Offers",
+      "headline": "Just in:<br>Weekly Offers",
       "callToActionText": "BROWSE OFFERS",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",

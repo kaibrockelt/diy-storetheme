@@ -6,12 +6,7 @@
   text-decoration: underline;
 }
 
-.infoCardContainer--info-card-home {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #FAB604;
-  padding: 0px;
-}
+
 
 .newsletter {
   background-color: #03054e;
@@ -72,6 +67,25 @@
   .label {
      font-size: 40px;
   }
+  .infoCardContainer--info-card-home {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FAB604;
+    padding: 0px;
+  }
+  .infoCardContainer--info-card-gardening {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0A3909;
+    padding: 0px;
+  }
+.infoCardContainer{
+  background-image: url("assets/cicd/Stripes-white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+}
+
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 40%;
   }
@@ -80,19 +94,32 @@
     display: flex;
     align-items:center;
     align-content: center;
-    background-image: url("assets/cicd/Stripes-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+
+  }
+  .infoCardContainer--info-card-gardening .infoCardTextContainer {
+    width: 40%;
+  }
+  .infoCardContainer--info-card-gardening .infoCardImageContainer {
+    width: 60%;
+    display: flex;
+    align-items:center;
+    align-content: center;
+    
   }
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
   }
 }
-.infoCardImage--info-card-home{
+.infoCardImage--info-card-home, 
+.infoCardImage--info-card-gardening{
   max-height: 500px;
   
-  margin: 20px auto;
+  margin: 0px auto;
+  
+}
+.infoCardImage--info-card-gardening{
+  margin: 0px 0px 0px auto;
 }
 
 .productImagesContainer--quickview .carouselContainer {
@@ -121,4 +148,27 @@
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+
+/*/kaistart*/
+.infoCardHeadline{
+  background: #fff;
+  color: #B40800;
+  font-weight: 700;
+  padding: 20px 50px 20px 10px;
+  text-align: left;
+}
+
+.infoCardCallActionContainer{
+  border-radius: 0px;
+  margin-top: 0px;
+}
+.infoCardTextContainer--info-card-home, .infoCardTextContainer--info-card-gardening {
+  display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      padding-left: 100px;
+  
 }

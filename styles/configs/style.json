@@ -57,7 +57,7 @@
         "background": {
           "base": "#ffffff",
           "base--inverted": "#03044e",
-          "action-primary": "#EA4F3D",
+          "action-primary": "#B40800",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
@@ -74,7 +74,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#072c75",
+          "action-primary": "#7C1619",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -149,7 +149,7 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#EA4F3D",
+          "action-primary": "#B40800",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
@@ -166,7 +166,7 @@
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
-          "action-primary": "#072c75",
+          "action-primary": "#7C1619",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -240,7 +240,7 @@
         }
       },
       "borderWidths": [0, 0.125, 0.25, 0.5, 1, 2],
-      "borderRadius": [0, 0.125, 0.25, 0.5, 1],
+      "borderRadius": [0, 0, 0, 0, 0],
       "widths": [1, 2, 4, 8, 16],
       "maxWidths": [1, 2, 4, 8, 16, 32, 48, 64, 96],
       "heights": [1, 2, 4, 8, 16],
@@ -263,14 +263,14 @@
             "fontFamily": "Roboto",
             "fontWeight": "700",
             "fontSize": "2.25rem",
-            "textTransform": "initial",
+            "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "heading-3": {
             "fontFamily": "Roboto",
             "fontWeight": "700",
             "fontSize": "1.75rem",
-            "textTransform": "initial",
+            "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "heading-4": {
