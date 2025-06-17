@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "5.2.0",
+  "vendor": "emeadiy",
+  "name": "diytheme",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -69,7 +69,9 @@
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
-    "vtex.mega-menu": "2.x"
+    "vtexventures.livestreaming": "3.x",
+    "vtex.mega-menu": "2.x",
+    "vtex.binding-selector": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

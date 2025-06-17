@@ -8,7 +8,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
+      //"flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
       
     ]
@@ -21,24 +21,13 @@
     }
   },
   
-  "flex-layout.row#3-desktop": {
+  
+  "flex-layout.col#searchbar": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "width": "grow",
+      "blockClass": "searchcontainer"
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
+    "children":["search-bar"]
   },
   "sticky-layout#4-desktop": {
     "props": {
@@ -66,12 +55,18 @@
       
 
       
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "flex-layout.col#searchbar",
+      
+      "binding-selector#mine",
       "login",
       "minicart.v2"
     ]
+  },
+  "binding-selector#mine":{
+    "props":{
+      "layout": "dropdown",
+      "display": "flag"
+    }
   },
   "mega-menu-trigger-btn":{
     "props":{
@@ -111,16 +106,30 @@
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#2-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       //"drawer",
       "mega-menu-trigger-btn#mob", 
       "logo#mobile",
-      "flex-layout.col#spacer",
+      
       "login",
       "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      //"drawer",
+      
+      "flex-layout.col#searchbar"
+    
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -146,7 +155,7 @@
   "flex-layout.row#drawer-header": {
     "children": [
       "flex-layout.col#mega-menu-go-back-btn",
-      "flex-layout.col#spacer",
+      
       "flex-layout.col#drawer-close-button"
     ],
     "props": {

@@ -7,7 +7,10 @@
       "flex-layout.col#deals4"
     ],
     "props": {
-      "blockClass": "deals"
+      "blockClass": "deals",
+      "colJustify": "around",
+      "horizontalAlign": "around",
+      "preventHorizontalStretch": "true"
     }
   },
 

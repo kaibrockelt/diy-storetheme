@@ -4,29 +4,43 @@
   justify-content: center;
 }
 
-.container--shelfTitle {
+.container--shelfTitle,
+.container--shelfTitle--padded{
   color: #000;
   justify-content: left;
   text-align: left;
-  padding-left: 10%;
+
   margin-top: 50px;
 }
-
-.headingLevel2--shelfTitle {
+.container--shelfTitle--padded{
+  padding-left: 4.5%;
+}
+.headingLevel2--shelfTitle,
+.headingLevel2--shelfTitle--padded {
   font-weight: 700;
   background: #B40800;
   color: #fff;
   padding: 20px 50px 20px 10px;
   margin-bottom: 0px;
 }
-.paragraph--shelfTitle
+
+.paragraph--shelfTitle,
+.paragraph--shelfTitle--padded,
+.link--tutlink
 {
   margin: 0;
   background: #000;
   color: #fff;
   display: inline-block;
   padding: 5px 20px 5px 10px;
+  text-decoration: none;
 }
+.link--shelfTitle,
+.link--shelfTitle--padded{
+  text-decoration: none;
+  color: #fff;
+}
+
 
 .container--deals .paragraph {
   margin: 0;
@@ -102,3 +116,20 @@
     line-height: 1.3em;
   }
 }
+
+
+.container--Tag {
+  display: inline-block;
+}
+
+.paragraph--Tag{
+  color: #000;
+  background-color: #FAB604;
+  text-transform: uppercase;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  border-radius: 2px;
+}
+
+

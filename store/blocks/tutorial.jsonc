@@ -1,0 +1,136 @@
+{
+  "store.custom#tutorial": {
+    "blocks": [
+      "rich-text#Video-title",
+      "flex-layout.row#sideBySide"
+    ]
+  },
+  "rich-text#Video-title": {
+    "props": {
+      "text": "## Building a shelf \n3 easy methods",
+      "textAlignment": "LEFT",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#sideBySide": {
+    "children": [
+      "flex-layout.col#video",
+      "flex-layout.col#productGallery"
+    ]
+  },
+  "flex-layout.col#video": {
+    "children": [
+      "video#tutorial",
+      "flex-layout.row#tags"
+    ],
+    "props": {
+      "width": "66%",
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.row#tags": {
+    "children": [
+      "flex-layout.col#tags"
+    ],
+    "props": {
+      "blockClass": "tags"
+    }
+  },
+  "flex-layout.col#tags": {
+    "children": [
+      "rich-text#tag1",
+      "rich-text#tag2",
+      "rich-text#tag3",
+      "rich-text#tag4",
+      "rich-text#tag5"
+    ],
+    "props": {
+      "blockClass": "tags"
+    }
+  },
+  "flex-layout.col#productGallery": {
+    "children": [
+      "rich-text#usedHere",
+      "list-context.product-list#tutorial"
+    ],
+    "props":{
+      "verticalAlign": "top"
+    }
+  },
+  "video#tutorial": {
+    "props": {
+      "width": "100%",
+      "height": "500px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=6clJWTTRWTE",
+      "blockClass": "videoEl"
+    }
+  },
+  "rich-text#usedHere": {
+    "props": {
+      "text": "### Tools and Material used in the Video",
+      "textAlignment": "CENTER",
+      "blockClass": "SideboxTitle"
+    }
+  },
+  "list-context.product-list#tutorial": {
+    "blocks": [
+      "product-summary.shelf#tutorial"
+    ],
+    "children": [
+      "slider-layout#tutorial"
+    ],
+    "props": {}
+  },
+  "product-summary.shelf#tutorial": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#tutorial": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "rich-text#tag1": {
+    "props": {
+      "text": "Furniture",
+      "blockClass": "Tag"
+    }
+  },
+  "rich-text#tag2": {
+    "props": {
+      "text": "Woodwork",
+      "blockClass": "Tag"
+    }
+  },
+  "rich-text#tag3": {
+    "props": {
+      "text": "Below 100$",
+      "blockClass": "Tag"
+    }
+  },
+  "rich-text#tag4": {
+    "props": {
+      "text": "Beginner-Friendly",
+      "blockClass": "Tag"
+    }
+  },
+  "rich-text#tag5": {
+    "props": {
+      "text": "Home-Improvement",
+      "blockClass": "Tag"
+    }
+  }
+}

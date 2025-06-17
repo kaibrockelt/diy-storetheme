@@ -29,3 +29,13 @@
   padding-right: .5rem;
   min-height: 550px;
 }
+.sliderArrows--welcomeSlider{
+  color: #fff;
+}
+.paginationDot--welcomeSlider{
+  background-color: #fff;
+}
+
+.paginationDot--isActive{
+  background-color:#b40800;
+}

@@ -5,11 +5,13 @@
       "slider-layout#welcome",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
+      
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
+      "__fold__",
+      "flex-layout.row#deals",
+      "flex-layout.row#videos",
+      "flex-layout.row#tutorialWrapper",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -22,44 +24,32 @@
         "desktop": 1,
         "tablet": 1,
         "phone": 1
-      }
-    }
-  },
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
       },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "welcomeSlider"
     }
+  },
+  
+  "flex-layout.row#videos":{
+    "children": [
+      "flex-layout.col#videos"
+    ]
+  },
+  "flex-layout.col#videos": {
+    "children": [
+      "livestreaming-snack-size-videos#home"
+    ]
   },
 
+  "livestreaming-snack-size-videos#home": {
+    "props":{
+      "variant": "carousel"
+    }
+  },
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Power Tools\nThere is no job that can't be done",
+      "text": "## [Power Tools](/tools-and-equipment/power-tools)\nThere is no job that can't be done",
       "textAlignment": "LEFT",
-      "blockClass": "shelfTitle"
+      "blockClass": "shelfTitle--padded"
     }
   },
   "flex-layout.row#shelf": {
@@ -92,8 +82,8 @@
     "blocks": ["product-summary.shelf#homeshelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "category": "11/15"
+      "orderBy": "OrderByTopSaleDESC"
+      //"category": "11/15"
     }
   },
   "slider-layout#demo-products": {
@@ -114,7 +104,7 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "assets/design/gardening.jpg",
+      "imageUrl": "assets/design/gardening.png",
       "headline": "OPEN SEASON has started",
       "callToActionText": "Find the right tools",
       "callToActionUrl": "/sale/d",
@@ -148,5 +138,118 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+
+
+
+  "flex-layout.row#tutorialWrapper":{
+    "children": [
+      "flex-layout.col#tutorialWrapper"
+    ]
+  },
+  "flex-layout.col#tutorialWrapper":{
+    "children": [
+     "rich-text#titleTutorials",
+     "rich-text#copyTutorials",
+     "flex-layout.row#tutorials"
+    ]
+  },
+  "rich-text#titleTutorials": {
+    "props": {
+      "text": "## DIY Tutorials\nWhen the joy of making kicks in.",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#copyTutorials": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sapien viverra, luctus turpis nec, venenatis ante. Sed tempor justo quis risus vestibulum, ac finibus sapien placerat. Maecenas dictum ex ex, non volutpat dolor tempor in. Duis finibus lobortis malesuada.",
+      "blockClass": "copy"
+    }
+  }, 
+  "flex-layout.row#tutorials":{
+    "children": [
+      "flex-layout.col#tut1",
+      "flex-layout.col#tut2",
+      "flex-layout.col#tut3"
+    ],
+    "props":{
+      "colGap": 2,
+      "horizontalAlign": "between"
+    }
+
+  },
+  "flex-layout.col#tut1":{
+    "children":[
+      "image#tut1",
+      "rich-text#tut1"
+    ],
+    "props":{
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#tut2":{
+    "children": [
+      "image#tut2",
+      "rich-text#tut2"
+    ],
+    "props":{
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#tut3":{
+"children":[
+      "image#tut3",
+      "rich-text#tut3"
+    ],
+    "props":{
+      "horizontalAlign": "left"
+    }
+  },
+
+  "image#tut1": {
+    "props": {
+      "src": "assets/design/tut-shelf.jpg",
+      "height": "100%",
+      "width": "auto"
+      
+    }
+  },
+    "image#tut2": {
+    "props": {
+      "src": "assets/design/tut-gardening.jpg",
+      "height": "100%",
+      "width": "auto"
+    }
+  },
+    "image#tut3": {
+    "props": {
+      "src": "assets/design/tut-bathroom.jpg",
+      "height": "100%",
+      "width": "auto"
+    }
+  },
+  "rich-text#tut1":{
+    "props":{
+      "text": "### 3 easy ways to build a shelf\n[watch tutorial](/tutorial)",
+      "blockClass": "tutlink"
+      
+    }
+  },
+  "rich-text#tut2":{
+    "props":{
+      "text": "### Build your oasis of peace\n[watch tutorial](/tutorial)",
+      "blockClass": "tutlink"
+      
+      
+    }
+  },
+  "rich-text#tut3":{
+    "props":{
+      "text": "### Gimmicks for the modern bathroom\n[watch tutorial](/tutorial)",
+      "blockClass": "tutlink"
+      
+      
+    }
   }
 }
+
