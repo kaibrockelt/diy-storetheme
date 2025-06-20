@@ -69,6 +69,7 @@
   },
   "peerDependencies": {
     "vtexventures.livestreaming": "3.x",
+    "vtexventures.personal-shopper-free": "0.x",
     "vtex.binding-selector": "2.x",
     "vtex.mega-menu": "2.x",
     "vtex.reviews-and-ratings": "3.x",

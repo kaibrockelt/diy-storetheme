@@ -8,6 +8,7 @@
       
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      "pa-widget",
       "__fold__",
       "flex-layout.row#deals",
       "flex-layout.row#newshl",
@@ -17,6 +18,7 @@
       "rich-text#question",
       "rich-text#link",
       "newsletter"
+      
     ]
   },
   "slider-layout#welcome":{
