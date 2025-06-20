@@ -27,7 +27,12 @@
       "width": "grow",
       "blockClass": "searchcontainer"
     },
-    "children":["search-bar"]
+    "children":["search-bar#custom"]
+  },
+  "search-bar#custom":{
+    "props":{
+      "blockClass": "diysearchbar"
+    }
   },
   "sticky-layout#4-desktop": {
     "props": {
@@ -97,6 +102,7 @@
   "logo#desktop": {
     "props": {
     "title": "Logo",
+    "blockClass": "mainlogoyo",
     "href": "/",
     "url": "assets/cicd/logo-color.png",
     "width": "180px"

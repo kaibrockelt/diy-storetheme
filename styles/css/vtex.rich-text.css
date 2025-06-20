@@ -133,3 +133,10 @@
 }
 
 
+.link--newstag{
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 1.3rem;
+  font-family: 'Roboto';
+}

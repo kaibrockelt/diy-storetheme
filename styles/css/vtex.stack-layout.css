@@ -8,3 +8,14 @@
   top: 0;
   left: auto;
 }
+
+
+.stackItem--news--newstag
+{
+    position: absolute !important;
+    bottom: 0 !important;
+    top: auto;
+    padding-left: 10px;
+}
+
+ 

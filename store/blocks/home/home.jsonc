@@ -10,6 +10,8 @@
       "flex-layout.row#shelf",
       "__fold__",
       "flex-layout.row#deals",
+      "flex-layout.row#newshl",
+      "flex-layout.row#news",
       "flex-layout.row#videos",
       "flex-layout.row#tutorialWrapper",
       "rich-text#question",
@@ -36,6 +38,7 @@
   },
   "flex-layout.col#videos": {
     "children": [
+      "rich-text#videos",
       "livestreaming-snack-size-videos#home"
     ]
   },
@@ -43,6 +46,13 @@
   "livestreaming-snack-size-videos#home": {
     "props":{
       "variant": "carousel"
+    }
+  },
+  "rich-text#videos": {
+    "props": {
+      "text": "## What our clients do\nNo challenge is too big.",
+      "textAlignment": "LEFT",
+      "blockClass": "shelfTitle"
     }
   },
   "rich-text#shelf-title": {
@@ -82,8 +92,8 @@
     "blocks": ["product-summary.shelf#homeshelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
-      //"category": "11/15"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "11/15"
     }
   },
   "slider-layout#demo-products": {

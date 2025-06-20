@@ -173,3 +173,32 @@
       padding-left: 100px;
   
 }
+.autoCompleteOuterContainer--diysearchbar :global(.vtex-input-prefix__group) {
+  height: 58px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  
+}
+
+.autoCompleteOuterContainer--diysearchbar :global(.vtex-input__suffix) {
+  padding: 0;
+}
+
+.searchBarIcon--diysearchbar{
+    background-color: #FAAE17;
+    padding: 0 30px 0 25px;
+    color: #fff;
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.5);
+    border-left: 1px solid #7D570C;
+
+}
+
+.searchBarContainer :global(.vtex-input) {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.logoContainer--mainlogoyo
+{
+  display: block;
+}

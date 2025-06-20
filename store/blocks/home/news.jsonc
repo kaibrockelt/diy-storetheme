@@ -1,0 +1,143 @@
+{
+  "flex-layout.row#newshl":{
+    "children": ["flex-layout.col#newshl"]
+  },
+  "flex-layout.col#newshl":{
+    "children":["rich-text#newshl"]
+  },
+  "rich-text#newshl": {
+    "props": {
+      "text": "## Latest News\nBrowse DIY Articles.",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#news": {
+    "children": ["flex-layout.col#news1", "flex-layout.col#news2", "flex-layout.col#news3", "flex-layout.col#news4"],
+    "props": {
+        "colGap": 3,
+        "blockClass": "newsBlock"
+    }
+  },
+  "flex-layout.col#news1": {
+    "children": ["stack-layout#news1"]
+  },
+  "flex-layout.col#news2": {
+    "children": ["stack-layout#news2"]
+  },
+  "flex-layout.col#news3": {
+    "children": ["stack-layout#news3"]
+  },
+  "flex-layout.col#news4": {
+    "children": ["stack-layout#news4"]
+  },
+
+
+  "stack-layout#news1":{
+    "props":{
+        "blockClass": "news"
+    },
+    "children": [
+        "image#news1", 
+         "rich-text#news1"
+    ]
+  },
+  "stack-layout#news2":{
+    "props":{
+        "blockClass": "news"
+    },
+    "children": [
+        "image#news2", 
+         "rich-text#news2"
+    ]
+  },
+  "stack-layout#news3":{
+    "props":{
+        "blockClass": "news"
+    },
+    "children": [
+        "image#news3", 
+         "rich-text#news3"
+    ]
+  },
+  "stack-layout#news4":{
+    "props":{
+        "blockClass": "news"
+    },
+    "children": [
+        "image#news4", 
+         "rich-text#news4"
+    ]
+  }, 
+
+
+  "image#news1": {
+    "props": {
+      "src": "assets/design/miniBanner-1.png",
+      "height": "100%",
+      "width": "auto"
+      
+    }
+  },
+
+  "rich-text#news1": {
+    "props": {
+      "text": "### [Wireless cleaning with Einhell](#)",
+      "blockClass": "newstag"
+    }
+  },
+
+  "image#news2": {
+    "props": {
+      "src": "assets/design/miniBanner-2.png",
+      "height": "100%",
+      "width": "auto"
+      
+    }
+  },
+
+  "rich-text#news2": {
+    "props": {
+      "text": "### [Planting autumn Vegetables](#)",
+      "blockClass": "newstag"
+    }
+  },
+
+  "image#news3": {
+    "props": {
+      "src": "assets/design/miniBanner-3.png",
+      "height": "100%",
+      "width": "auto"
+      
+    }
+  },
+
+  "rich-text#news3": {
+    "props": {
+      "text": "### [Save Energy with LED](#)",
+      "blockClass": "newstag"
+    }
+  },
+
+  "image#news4": {
+    "props": {
+      "src": "assets/design/miniBanner-4.png",
+      "height": "100%",
+      "width": "auto"
+      
+    }
+  },
+
+  "rich-text#news4": {
+    "props": {
+      "text": "### [Proper Isolation](#)",
+      "blockClass": "newstag"
+    }
+  }
+
+
+
+
+
+
+
+} 

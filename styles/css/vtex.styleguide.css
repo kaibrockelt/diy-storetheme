@@ -1,0 +1,4 @@
+.autoCompleteOuterContainer--diysearchbar :global(.vtex-input){
+    text-transform: uppercase;
+    color: #000;
+  }
