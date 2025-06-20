@@ -202,3 +202,11 @@
 {
   display: block;
 }
+.userAddressContainer{
+  color: #000;
+  background: none;
+}
+
+.addressInfoIconContainer{
+  color: #000;
+}
