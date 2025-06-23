@@ -1,0 +1,5 @@
+
+
+.wrapper--sticky-header--stuck :global(.vtex-flex-layout-0-x-flexRowContent--main-header){
+    background: #fff !important;
+}

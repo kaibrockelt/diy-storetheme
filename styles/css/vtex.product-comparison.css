@@ -1,0 +1,27 @@
+.drawerContainer
+{
+    border-top: 2px solid #000;
+    background: linear-gradient(180deg,rgba(250, 182, 4, 1) 0px, rgba(250, 182, 4, 1) 50px, rgba(255, 255, 255, 1) 50px);
+    z-index: 10000;
+}
+
+.drawerTitleInnerContainer
+{
+    color: #000;
+}
+
+.hideOrShowText,
+.removeAllWrapper--comparisonDrawer
+{
+    text-transform: uppercase;
+    color: #fff;
+}
+.removeAllItemsButtonWrapper :global(.vtex-button)
+{
+    color: #b40800;
+}
+
+.removeAllItemsButtonWrapper :global(.vtex-button):hover{
+    background-color: #b40800;
+    color: #fff; 
+}

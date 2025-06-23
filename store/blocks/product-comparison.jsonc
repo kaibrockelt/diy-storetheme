@@ -47,8 +47,17 @@
     "heightProp": 200
   }
 },
+"product-summary-image#comparison-slider": {
+  "props": {
+    "width": 80,
+    "heightProp": 80
+  }
+},
 "product-comparison-block.grouped-product-specifications": {
-  "blocks": ["list-context.comparison-row#comparison-page-row"]
+  "blocks": ["list-context.comparison-row#comparison-page-row"],
+  "props":{
+    "productSpecificationGroupsToHide": "allSpecifications"
+  }
 },
 "list-context.comparison-row#comparison-page-row": {
   "children": ["slider-layout#comparison-no-arrows"]
@@ -88,7 +97,10 @@
 
 // MIDDLE 
 "product-comparison-drawer": {
-  "blocks": ["list-context.comparison-product-summary-slider#drawer"]
+  "blocks": ["list-context.comparison-product-summary-slider#drawer"],
+  "props": {
+    "blockClass": "comparisonDrawer"
+  }
 },
 "list-context.comparison-product-summary-slider#drawer": {
   "blocks": ["product-summary.shelf.product-comparison#drawer"],
@@ -109,6 +121,7 @@
 },
 "product-summary.shelf.product-comparison#drawer": {
   "children": [
+    "product-summary-image#comparison-slider",
     "product-summary-column#drawer-col2",
     "product-comparison-block.close-button"
   ],
@@ -117,7 +130,7 @@
   }
 },
 "product-summary-column#drawer-col2": {
-  "children": ["product-summary-name", "product-summary-price#comparison"],
+  "children": [  "product-summary-name", "product-summary-price#comparison"],
   "props": {
     "blockClass": "drawer-summary-col2"
   }
