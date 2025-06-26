@@ -51,3 +51,8 @@
   top: -5px !important;
   
 }
+.image--shelfImage{
+  box-sizing:border-box;
+  border-radius: 10px;
+  border: 0.8px solid rgba(0, 0, 0, 0.3);
+}

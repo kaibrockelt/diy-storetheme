@@ -1,0 +1,27 @@
+{
+  "store.blog-home": {
+    "blocks": [
+      "blog-all-posts.wordpress-all-posts"
+      
+    ]
+  },
+  "store.blog-category": {
+    "blocks": [
+      "blog-category-list.wordpress-category-list"
+      
+    ]
+  },
+  "store.blog-post": {
+    "blocks": [
+     "blog-post-details.wordpress-post-details"
+      
+    ]
+  },
+  "store.blog-search-result": {
+    "blocks": [
+      "blog-search-list.wordpress-search-list"
+      
+    ]
+  }
+  
+}

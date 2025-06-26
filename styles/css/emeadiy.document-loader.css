@@ -1,0 +1,12 @@
+.infoCardContainer
+{
+    flex-direction: column-reverse;
+}
+
+.infoCardImage
+{
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}

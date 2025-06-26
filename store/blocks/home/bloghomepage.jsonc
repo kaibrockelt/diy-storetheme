@@ -1,0 +1,12 @@
+{
+    
+    "blog-latest-posts-preview.wordpress-latest-posts-preview#kaiblog":{
+        "props": {
+            "title": "latest blog entries",
+            "numberOfPosts": 3,
+            "mediaSize": "thumbnail"
+        }
+    }
+
+
+}

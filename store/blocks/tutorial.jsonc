@@ -9,14 +9,18 @@
     "props": {
       "text": "## Building a shelf \n3 easy methods",
       "textAlignment": "LEFT",
-      "blockClass": "shelfTitle"
+      "blockClass": "shelfTitle--padded"
     }
   },
   "flex-layout.row#sideBySide": {
     "children": [
       "flex-layout.col#video",
       "flex-layout.col#productGallery"
-    ]
+    ],
+    "props":{
+      "colGap": 5,
+      "marginBottom": 10
+    }
   },
   "flex-layout.col#video": {
     "children": [

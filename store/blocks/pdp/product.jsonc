@@ -4,13 +4,36 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",      
       "flex-layout.row#description",
+      "flex-layout.row#downloads",
+      
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
+      "shelf.relatedProducts#acessoires",
       "shelf.relatedProducts", 
       "product-reviews",
       "product-questions-and-answers",
 
       "product-comparison-drawer"
+    ]
+  },
+  "flex-layout.row#downloads":{
+    "children":  ["flex-layout.col#downloads"]
+  },
+  "flex-layout.col#downloads": {
+    "children": ["document-loader"]
+  },
+  "shelf.relatedProducts#acessoires": {
+    "props": {
+      "recommendation": "accessories",
+      "groupBy": "PRODUCT",
+      "hideOutOfStockItems": false,
+      "productList": {
+        "titleText": "Accessories",
+        "itemsPerPage": 4
+      }
+    },
+    "blocks": [
+      "product-summary.shelf#homeshelf"
     ]
   },
   "flex-layout.row#specifications-title": {

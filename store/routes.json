@@ -14,7 +14,20 @@
   
      "store.custom#product-comparison-list": {
        "path": "/product-comparison"
-     }
+     },
+
+  "store.blog-home": {
+	"path": "/blog"
+},
+"store.blog-category": {
+	"path": "/blog/category/:categoryslug_id"
+},
+"store.blog-post": {
+	"path": "/blog/post/:slug_id"
+},
+"store.blog-search-result": {
+	"path": "/blog/search/:term_id"
+}
   
     
 }

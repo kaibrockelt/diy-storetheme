@@ -68,13 +68,14 @@
          "rich-text#news4"
     ]
   }, 
-
+ 
 
   "image#news1": {
     "props": {
       "src": "assets/design/miniBanner-1.png",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
       
     }
   },
@@ -90,7 +91,8 @@
     "props": {
       "src": "assets/design/miniBanner-2.png",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
       
     }
   },
@@ -106,7 +108,8 @@
     "props": {
       "src": "assets/design/miniBanner-3.png",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
       
     }
   },
@@ -122,7 +125,8 @@
     "props": {
       "src": "assets/design/miniBanner-4.png",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
       
     }
   },

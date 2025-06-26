@@ -10,7 +10,7 @@
 
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #000;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -209,4 +209,29 @@
 
 .addressInfoIconContainer{
   color: #000;
+}
+
+
+.imageElement--rrrr
+{
+  border-radius: 10px;
+}
+
+
+
+.buttonContainer--nl :global(.vtex-button__label){
+  text-align: center;
+  background: #fff;
+  color: #000;
+  padding-top: 12px !important;
+  padding-bottom: 13px !important;
+}
+
+.frameAround, 
+.skuSelectorInternalBox, 
+.diagonalCross{
+  border-radius: 10px;
+}
+.skuSelectorInternalBox{
+  border-color: #000;
 }

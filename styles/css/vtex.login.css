@@ -1,0 +1,9 @@
+.container :global(.vtex-button){
+    background-color: #FAB604;
+    
+}
+
+.label
+{
+    color: #000;
+}

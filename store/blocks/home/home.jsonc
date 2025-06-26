@@ -15,11 +15,20 @@
       "flex-layout.row#news",
       "flex-layout.row#videos",
       "flex-layout.row#tutorialWrapper",
+      "blog-latest-posts-preview.wordpress-latest-posts-preview#kaiblog",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter#nl"
       
     ]
+  },
+
+  
+  "newsletter#nl":{
+    "props": {
+      "blockClass": "nl"
+
+    }
   },
   "slider-layout#welcome":{
     "children": ["info-card#home", "info-card#gardening"],
@@ -222,7 +231,8 @@
     "props": {
       "src": "assets/design/tut-shelf.jpg",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
       
     }
   },
@@ -230,14 +240,16 @@
     "props": {
       "src": "assets/design/tut-gardening.jpg",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
     }
   },
     "image#tut3": {
     "props": {
       "src": "assets/design/tut-bathroom.jpg",
       "height": "100%",
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"rrrr"
     }
   },
   "rich-text#tut1":{
