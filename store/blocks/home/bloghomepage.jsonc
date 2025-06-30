@@ -4,7 +4,9 @@
         "props": {
             "title": "latest blog entries",
             "numberOfPosts": 3,
-            "mediaSize": "thumbnail"
+            "mediaSize": "thumbnail",
+            "showCategories": false,
+            "showDates":false
         }
     }
 

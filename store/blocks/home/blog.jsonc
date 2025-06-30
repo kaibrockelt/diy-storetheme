@@ -7,13 +7,14 @@
   },
   "store.blog-category": {
     "blocks": [
-      "blog-category-list.wordpress-category-list"
+      "blog-category-list.wordpress-category-list#kai"
       
     ]
   },
   "store.blog-post": {
     "blocks": [
-     "blog-post-details.wordpress-post-details"
+      "flex-layout.row#blogcontainer",
+      "flex-layout.row#offercontainer"
       
     ]
   },
@@ -22,6 +23,34 @@
       "blog-search-list.wordpress-search-list"
       
     ]
+  },
+
+  "flex-layout.row#blogcontainer":{
+    "children": ["flex-layout.col#blogcontainer"]
+  },
+  "flex-layout.row#offercontainer":{
+    "children": ["flex-layout.col#offercontainer"]
+  },
+  "flex-layout.col#blogcontainer":{
+    "children": ["blog-post-details.wordpress-post-details#kai"],
+    "props":{
+      "blockClass": "limiter"
+    }
+  },
+  "flex-layout.col#offercontainer":{
+    "children": ["blog-related-products.wordpress-related-products#kai"]
+  },
+
+  "blog-post-details.wordpress-post-details#kai":{
+
+  },
+  "blog-category-list.wordpress-category-list#kai":{
+    "props":{
+      "mediaSize": "thumbnail"
+    }
+  },
+
+  "blog-related-products.wordpress-related-products#kai":{
+    "blocks": ["product-summary.shelf#homeshelf"]
   }
-  
 }
