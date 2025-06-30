@@ -1,0 +1,26 @@
+.latestPostsBlockFlexItem :global(.vtex-card){
+    box-shadow: none !important;
+} 
+
+.teaserImage {
+    border-radius: 10px;
+}
+
+.teaserTitleLink{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.latestPostsBlockTitle
+{
+    text-align: left;
+    font-weight: 700;
+    background: #B40800;
+    color: #fff;
+    padding: 20px 50px 20px 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin-left: 5rem;
+
+}
