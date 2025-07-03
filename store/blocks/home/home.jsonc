@@ -150,7 +150,8 @@
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "blockClass": "question",
+      "textAlignment": "CENTER"
     }
   },
 
