@@ -66,7 +66,9 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "vtex.category-menu": "2.x",
-    "vtex.product-comparison": "0.x"
+    "vtex.product-comparison": "0.x",
+    "vtex.my-wishlists": "2.x",
+    "vtex.search": "2.x"
   },
   "peerDependencies": {
     "vtexventures.livestreaming": "3.x",

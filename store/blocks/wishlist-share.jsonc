@@ -1,0 +1,12 @@
+{
+    "store.custom#wishlistshare": {
+      "blocks": [
+        "flex-layout.row#wishlistshare"
+      ]
+    },
+    "flex-layout.row#wishlistshare": {
+      "children": [
+        "wishlist-share"
+      ]
+    }
+  }

@@ -27,7 +27,10 @@
 },
 "store.blog-search-result": {
 	"path": "/blog/search/:term_id"
-}
-  
+},
+  "store.custom#wishlistshare": {
+    "path": "/wishlist-share" 
+  }
+
     
 }

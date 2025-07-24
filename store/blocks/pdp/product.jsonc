@@ -127,6 +127,7 @@
       "flex-layout.row#product-name",
       "product-comparison-block.selector#pdp",
       "product-rating-summary",
+      
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       
@@ -139,7 +140,9 @@
       "flex-layout.row#buy-button",
       "availability-subscriber",
       "shipping-simulator",
+      "button-wishlist-pdp",
       "share#default"
+      
     ]
   },
 

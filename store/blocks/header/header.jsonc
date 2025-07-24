@@ -30,6 +30,9 @@
     "children":["search-bar#custom"]
   },
   "search-bar#custom":{
+    "blocks":[
+      "autocomplete-result-list.v2"
+    ],
     "props":{
       "blockClass": "diysearchbar"
     }

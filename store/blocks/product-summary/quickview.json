@@ -75,7 +75,8 @@
   },
   "flex-layout.col#quickview-add-to-card-button": {
     "children": [
-      "add-to-cart-button"
+      "add-to-cart-button", 
+      "button-wishlist-pdp"
     ],
     "props": {
       "width": "grow"
