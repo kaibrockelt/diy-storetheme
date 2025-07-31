@@ -1,7 +1,7 @@
 {
   "vendor": "emeadiy",
   "name": "diytheme",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "emeadiy.document-loader": "0.x",
+    "emeadiy.recoschema": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
