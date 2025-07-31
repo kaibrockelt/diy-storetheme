@@ -11,16 +11,16 @@
       "product-specification-group#table",
       "shelf.relatedProducts#acessoires",
       "shelf.relatedProducts", 
-      "schemabuilder#kaiaiaiai", 
+      //"schemabuilder#kaiaiaiai", 
       "product-reviews",
       "product-questions-and-answers",
 
       "product-comparison-drawer"
     ]
   },
-  "schemabuilder#kaiaiaiai":{
+  /*"schemabuilder#kaiaiaiai":{
     "props": {}
-  },
+  },*/
   "flex-layout.row#downloads":{
     "children":  ["flex-layout.col#downloads"]
   },
