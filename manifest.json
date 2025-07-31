@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "emeadiy.document-loader": "0.x",
-    "emeadiy.recoschema": "0.x",
+    //"emeadiy.recoschema": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
